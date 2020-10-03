@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+   margin: 0;
+   padding: 0;
+   background-color: #bdd4e7;
+   background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+   font-family: 'Raleway', sans-serif;
+ 
+}
+
+h1{
+ font-size: 60px;
+}
+
+h2{
+font-size: 40px;
+
+}
+
+.photo{
+ grid-area: photo;
+}
+
+
+.navigation{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-area: nav;
+}
+
+.navigation a{
+    font-size: 24px;
+    padding: 0.0625px 0.125px;
+    outline:none;
+    background-color:#333;
+    color:white;
+    margin:0 1% 1% 0;
+    border-radius:0.03125px;
+    text-align: center;
+    text-decoration:none;
+}
+
+h3{
+ font-size: 32px;
+}
+
+h4{
+font-size: 16px;
+
+}
+
+h5{
+font-size: 16px;
+padding-bottom: 1rem;
+}
+
+.about{
+ display: grid;
+ grid-area: about;
+}
+
+.work{
+ display: grid;
+ grid-area: work;
+}
+
+.work-list h4{
+ font-size: 24px;
+}
+
+.work-list{
+
+}
+
+.education{
+ grid-area: education;
+ display: grid;
+}
+
+.skills{
+ grid-area: skills;
+}
+
+.references{
+   grid-area: references;
+}
+
+.reference-list{
+   display: grid;
+}
+
+.education-list{
+   display: grid;
+}
+
+.resume{
+}
+.community-service{
+ grid-area: service;
+}
+
+.footer{
+ grid-area: footer;
+ font-size: 24px;
+}
+
+.photo img{
+   max-width: 600px;
+   width: 100%;
+}
+
+.reference1 p{
+}
+
+.list{
+   display: grid;
+}
+
+.work-list{
+   display: grid;
+}
+
+.name{
+ grid-area: header;
+}
+
+.bundle{
+   display: grid;
+}
+
+.footer p{
+   font-size: 16px;
+}
+
+footer{
+   margin-top: 1rem;
+}
+
+@media (min-width: 650px){
+ .navigation{
+    margin-top: 1rem;
+ }
+
+ .photo img{
+    max-width: 800px;
+ }
+ }
+
+ .work-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ }
+
+ .reference-list{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+ }
+ 
+
+
+
+@media (min-width: 800px){
+    h4{
+    margin-top: 2rem;
+    }
+
+   
+
+    .navigation{
+     margin-top: 2rem;
+    }
+
+    .reference-list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo img{
+       min-width: 300px;
+       width: 100%;
+    }
+
+    .work-list{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education-list{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+
+    .resume{
+      display: grid;
+      grid-gap: 2px;
+      grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+          "header photo"
+          "nav nav"
+          "about about"
+          "work work"
+          "education education"
+          "skills skills"
+          "service service"
+          "references references"
+          "footer footer";
+    }
+
+
+
+}
+
+@media (min-width: 1000px){
+
+
+   footer{
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .footer p{
+      margin-top: 40px;
+      margin-right: 40px;
+   }
+
+   .reference-list{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+   }
+
+   .photo img{
+      max-width: 1200px;
+      width: 100%;
+   }
+
+   .work-list{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   h1{
+    text-align: center;
+   }
+
+   h2{
+      text-align: center;
+   }
+
+  
+}
+
+
+@media(min-width: 1200px){
+   
+   .reference-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+
+img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.name{
+ text-align: center;
+}
+
+.work-list{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+}
+}
+
+
+
+@media (min-width: 1400px){
+ .navigation{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+ }
+
+
+
+.reference-list{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+}
+
+.work-list{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.education-list{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+}
+
+.photo img{
+   max-width: 1385px;
+   width: 100%;
+}
+
+.list{
+ display: grid;
+ grid-template-columns: 1fr;
+}
+
+}
+
